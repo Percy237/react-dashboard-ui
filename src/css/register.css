@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  background: #5cdb95;
+}
+
+.register-container {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  display: flex;
+  left: 20%;
+  top: 5%;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.register-container-left {
+  background: url("../src/assets/images/kids-holding-their-certificates.jpg")
+    no-repeat;
+  background-size: cover;
+  flex: 1;
+  position: relative;
+}
+
+.register-container-left div {
+  position: absolute;
+  background-color: #5cdb95;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.register-container-left div p {
+  color: #edf5e1;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.register-container-right {
+  flex: 1;
+  background: #edf5e1;
+}
+
+.register-container-right h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.form-box {
+  display: grid;
+  place-content: center;
+  margin-top: 6rem;
+}
+
+.text {
+  font-size: 13px;
+  text-align: left;
+  color: grey;
+}
+
+.form-box p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.form-box p span {
+  color: #5cdb95;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 50%;
+  }
+  .register-container {
+    width: 80vw;
+  }
+  .register-container-left {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.dashboard-sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 60px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: #ffffff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  box-shadow: 0px 8px 28px 0px #4859661a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dark .dashboard-sidenav {
+  background: #3f3f3f;
+}
+
+.dashboard-sidenav .sidenav-icons {
+  font-size: 30px;
+  color: #252c58;
+}
+
+#dark .dashboard-sidenav .sidenav-icons {
+  color: #ffffff;
+}
+
+.dashboard-sidenav .sidenav-icons ul li {
+  list-style: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard-sidenav {
+    display: none;
+  }
+}
